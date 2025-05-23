@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="blogpage.css">
+<title>Kerala</title>
+</head>
+<body>
+
+<div class="header">
+  <h2>EXPLORING  AROUND </h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h1 style="font-family:'Times New Roman', Times, serif;">KERALA</h1>
+      <h3> Dec 7, 2017</h3>
+      <div class="slideshow-container">
+
+        <div class="container">
+          <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img src="k1.jpg" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="k2.jpg" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="k3.jpg" style="width:100%">
+          </div>
+            
+          <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="ktemple.jpg" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="k5.jpg" style="width:100%">
+          </div>
+            
+          <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="k6.jpg" style="width:100%">
+          </div>
+            
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        </div>
+
+      <p> Kerala is a state on the Malabar Coast of India.
+        It is bordered by Karnataka to the north and northeast, Tamil Nadu to the east and south, and the Lakshadweep Sea to the west.<br><br>
+        One folk etymology derives Kerala from the Malayalam word kera 'coconut tree' and alam 'land';
+        thus, 'land of coconuts', which is a nickname for the state used by locals due to the abundance of coconut trees.<br><br>
+        The land which rose from sea was filled with salt and unsuitable for habitation; so Parasurama invoked the Snake King Vasuki, who spat holy poison and converted the soil into fertile lush green land. <br><br>
+        Kerala has been a major spice exporter since 3000 BCE, according to Sumerian records and it is still referred to as the "Garden of Spices" or as the "Spice Garden of India".Kerala's spices attracted ancient Arabs,
+        Babylonians, Assyrians and Egyptians to the Malabar Coast in the 3rd and 2nd millennia BCE. Phoenicians established trade with Kerala during this period.<br><br>
+        Kerala's western coastal belt is relatively flat compared to the eastern region,and is criss-crossed by a network of interconnected brackish canals, lakes, estuaries, and rivers known as the Kerala Backwaters.
+        Kuttanad, also known as The Rice Bowl of Kerala, has the lowest altitude in India, and is also one of the few places in world where cultivation takes place below sea level.
+      </p>
+    </div>
+    <div class="card"><center>
+      <h3>Follow For More</h3>
+      <input placeholder="Some text.." style="height: 55px; width: 80%;" ></center>
+    </div>
+ 
+  </div>
+  <div class="rightcolumn">
+    <!-- <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg" style="height:100px;">Image</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div> -->
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg"><a href="udaipur.html"><img src="u1.jpg" style= "height: 100%;" width="100%;"></a></div><br>
+      <div class="fakeimg"><a href="rishikesh.html"><img src="r1.jpg" style= "height: 100%;" width="100%;"></a></div><br>
+      <div class="fakeimg"><a href="goa.html"><img src="g1.jpg" style= "height: 100%;" width="100%;"></a></div><br>
+      <div class="fakeimg"><a href="manali.html"><img src="m1.jpg" style= "height: 100%;" width="100%;"></a></div>
+    </div>
+
+      
+    <div class="card">
+      <h3>Popular Blog</h3>
+      <div class="container"><a href="culture.html"><img src="culture1.jpg" style= "height: 90%;" width="100%;"></a>
+        <div class="overlay">Cultures In India</div></a>
+      </div><br>
+      
+      <div class="container"><a href="it.html"><img src="it.jpg" style= "height: 100%;" width="100%;"></a>
+        <div class="overlay">IT Hubs Of India</div></a>
+      </div>  <br>  
+      
+      <div class="container"><a href="food.html"><img src="food.jpg" style= "height: 100%;" width="100%;"></a>
+        <div class="overlay">Authentic Foods Of India</div></a>
+      </div><br>
+      </div>
+
+
+  </div>
+</div>
+<div class="footer">
+  <h2>For More Contact Us By</h2><br>
+  <input placeholder="Any queries write us here..." >
+      <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved </p>
+</div>
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("demo");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+    </body>
+</html>
+<!-- <img src="k5.jpg" style="width:100%"> -->

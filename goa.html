@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="blogpage.css">
+<title>Goa</title>
+</head>
+<body>
+
+<div class="header">
+  <h2>EXPLORING  AROUND </h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h1 style="font-family:'Times New Roman', Times, serif;">Goa</h1>
+      <h3> Dec 7, 2017</h3>
+      <div class="slideshow-container">
+
+        <div class="container">
+          <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img src="g1.jpg" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="g2.jpg" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="g3.jpg" style="width:100%">
+          </div>
+            
+          <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="g4.jpg" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="g5.jpg" style="width:100%">
+          </div>
+            
+          <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="g6.jpg" style="width:100%">
+          </div>
+            
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        </div>
+
+      <p>Goa is a state on the southwestern coast of India within the Konkan region, geographically separated from the Deccan highlands by the Western Ghats. It is bound by the Indian states of Maharashtra to the north, and Karnataka to the east and south,
+         with the Arabian Sea in the west. It is India's smallest state by area and fourth-smallest by population.<br><br>
+         Panaji is the state's capital, while Vasco da Gama is its largest city. <br>
+         After the Bahmani-Bijapuri city of Goa was captured by Afonso de Albuquerque in AD 1510, and made the capital of the Estado da Índia, the city gave its name to the contiguous territories.
+         The origin of the city name "Goa" is unclear. In ancient literature,
+          Goa was known by many names, such as Gomanchala, Gopakapattana, Gopakapattam, Gopakapuri, Govapuri, Govem, and Gomantak.<br><br>
+         The historic city of Margão in Goa still exhibits the cultural influence of the Portuguese, who first voyaged to the subcontinent in the early 16th century as merchants,
+        and conquered it soon thereafter, whereupon Goa became an overseas territory of the Portuguese Empire, part of what was then known as Portuguese India, and remained as such for about 456 years until it was annexed by India in 1961.
+        Goa's official language, which is spoken by a majority of its inhabitants, is Konkani.<br><br>
+        Goa is visited by large numbers of international and domestic tourists each year because of its white-sand beaches, active nightlife, places of worship, and World Heritage-listed architecture.
+        It also has rich flora and fauna because it lies very close to the North Western Ghats rainforests, one of the rare biodiversity hotspots of the world.<br><br>
+        In 1843, the Portuguese moved the capital to the Cidade da Nova Goa (City of New Goa), today known as Panaji (Panjim), from Velha Goa (Old Goa). 
+        By the mid-18th century, Portuguese expansions lost other possessions in India until their borders stabilised and formed the Goa, Daman and Diu, which included Silvassa prior to the Annexation, it was known as Estado da Índia in Portuguese, that is the "State of Portuguese India".<br><br></p>
+    </div>
+    
+    <div class="card"><center>
+      <h3>Follow For More</h3>
+      <input placeholder="Some text.." style="height: 55px; width: 80%;" ></center>
+    </div>
+
+  </div>
+  <div class="rightcolumn">
+    <!-- <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg" style="height:100px;">Image</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div> -->
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg"><a href="udaipur.html"><img src="u1.jpg" style= "height: 100%;" width="100%;"></a></div><br>
+      <div class="fakeimg"><a href="kerala.html"><img src="k1.jpg" style= "height: 100%;" width="100%;"></a></div><br>
+      <div class="fakeimg"><a href="manali.html"><img src="m1.jpg" style= "height: 100%;" width="100%;"></a></div><br>
+      <div class="fakeimg"><a href="rishikesh.html"><img src="r1.jpg" style= "height: 100%;" width="100%;"></a></div>
+    </div>
+
+    <div class="card">
+      <h3>Popular Blog</h3>
+      <div class="container"><a href="culture.html"><img src="culture1.jpg" style= "height: 90%;" width="100%;"></a>
+        <div class="overlay">Cultures In India</div></a>
+      </div><br>
+      
+      <div class="container"><a href="it.html"><img src="it.jpg" style= "height: 100%;" width="100%;"></a>
+        <div class="overlay">IT Hubs Of India</div></a>
+      </div>  <br>  
+      
+      <div class="container"><a href="food.html"><img src="food.jpg" style= "height: 100%;" width="100%;"></a>
+        <div class="overlay">Authentic Foods Of India</div></a>
+      </div><br>
+      </div>
+  
+  </div>
+</div>
+
+<div class="footer">
+  <h2>For More Contact Us By</h2><br>
+  <input placeholder="Any queries write us here..." >
+      <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved </p>
+</div>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("demo");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+    </body>
+</html>
+<!-- <img src="k5.jpg" style="width:100%"> -->

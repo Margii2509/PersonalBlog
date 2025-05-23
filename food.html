@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Foods of India</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 10px;
+  font-size: 50px;
+  text-align: center;
+  color: white;
+  background-image: linear-gradient(rgba(54, 54, 54, 0.7),rgba(54, 54, 54, 0.7)), url("food.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  border: 0.5px solid black;
+  border-bottom: 1%;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* footer */
+.footer{
+  background-color: #3f3f3f;
+  height: 100%;
+  width:100%;
+  color: #fff; 
+}
+.footer h2{
+  font-family:'Times New Roman', Times, serif;
+  padding-left: 43% ;
+  padding-top: 3%;
+  font-size: 150%;
+}
+.footer input{
+  font-family:'Times New Roman', Times, serif;
+  margin-left: 30% ;
+  height: 40px;
+  width: 40%;
+  text-align: center;
+  margin-bottom: 7%;
+  font-size: 100%;
+}
+.social-icons
+{
+  text-align:center;
+  margin-top: -80px;
+  padding-bottom: 5%;
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:40px;
+  height:40px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.whatsapp:hover
+{
+  background-color:green
+}
+.social-icons a.instagram:hover
+{
+  background-color:rgb(225, 135, 150)
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+.footer p{
+  text-align: center;
+  font-size: 18px;
+  margin-top: -50px;
+  padding-bottom: 3%;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>Explore Around</h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h1>Food of India</h1>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div class="fakeimg1"><img src="foodf.jpg" width="100%"></div>
+      <p>
+      <b>Indian cuisine</b> consists of a variety of regional and traditional cuisines native to India. Given the diversity in soil, climate, culture, ethnic groups, and occupations, these cuisines vary substantially and use locally available spices, herbs, vegetables, and fruits.<br>
+        Indian food is also heavily influenced by religion, in particular Hinduism and Islam, cultural choices and traditions.<br>
+        <br>
+        Historical events such as invasions, trade relations, and colonialism have played a role in introducing certain foods to this country. The Columbian discovery of the New World brought a number of new vegetables and fruit to India. 
+        A number of these such as potatoes, tomatoes, chillies, peanuts, and guava have become staples in many regions of India.<br>
+        Cuisine differs across India's diverse regions as a result of variation in local culture, geographical location (proximity to sea, desert, or mountains), and economics. 
+        It also varies seasonally, depending on which fruits and vegetables are ripe.<br><br>
+        Many Indian desserts, or mithai, are fried foods made with sugar, milk or condensed milk. Ingredients and preferred types of dessert vary by region. In the eastern part of India, for example, most are based on milk products.
+        Many are flavoured with almonds and pistachios, spiced with cardamon, nutmeg, cloves and black pepper, and decorated with nuts, or with gold or silver leaf. 
+        Popular Indian desserts include rasogolla, gulab jamun, jalebi, laddu, and peda.
+      </p>
+    </div>
+
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+        <h3>Popular Post</h3>
+        <div class="fakeimg"><a href="westindian.html"><img src="wi.jpg" width="100%" height="100%"></a></div><br>
+        <div class="fakeimg"><a href="southindia.html"><img src="si.jpg" width="100%" height="100%"></a></div><br>
+        <div class="fakeimg"><a href="northindian.html"><img src="ni.jpg" width="100%" height="100%"></a></div><br>
+        <div class="fakeimg"><a href="eastindian.html"><img src="ei.jpg" width="100%" height="100%"></a></div><br>
+        <div class="fakeimg"><a href="7sister.html"><img src="sister.jpg" width="100%" height="100%"></a></div><br>
+    </div> 
+    <div class="card"><center>
+      <h3>Follow For More</h3>
+      <input placeholder="Some text.." style="height: 55px; width: 80%;" ></center>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <h2>For More Contact Us By</h2><br>
+  <input placeholder="Any queries write us here..." >
+      <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved </p>
+</div>
+
+</body>
+</html>

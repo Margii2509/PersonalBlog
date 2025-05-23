@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="blogpage.css">
+<title>Manali</title>
+</head>
+<body>
+
+<div class="header">
+  <h2>EXPLORING  AROUND </h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h1 style="font-family:'Times New Roman', Times, serif;">Manali</h1>
+      <h3> Dec 7, 2017</h3>
+      <div class="slideshow-container">
+
+        <div class="container">
+          <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img src="m1.jpg" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="m2.jpg" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="m3.jpg" style="width:100%">
+          </div>
+            
+          <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="m4.jpg" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="m5.jpg" style="width:100%">
+          </div>
+            
+          <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="m6.jpg" style="width:100%">
+          </div>
+            
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        </div>
+
+      <p>Manali is a town, near Kullu town in Kullu district in the Indian state of Himachal Pradesh.
+         It is situated in the northern end of the Kullu Valley, formed by the Beas River. <br><br>
+         Manali is named after the Sanātanī lawgiver Manu (see Manusmriti). The name Manali is regarded as the derivative of Manu-Alaya (transl.'the abode of Manu').In Hindu cosmology, Manu is believed to have stepped off his ark in Manali to recreate human life after a great flood had deluged the world. 
+         The Kullu Valley in which Manali is situated is often referred to as the "Valley of the Gods".
+         An old village in the town has an ancient temple dedicated to the sage Manu.<br><br>
+         Manali is the beginning of an ancient trade route through Lahaul (H.P) and Ladakh, over the Karakoram Pass and onto Yarkand and Hotan in the Tarim Basin of China. 
+         Manali is a popular tourist destination in India and serves as the gateway to the Lahaul and Spiti district as well as the city of Leh in Ladakh.<br><br>
+         With spectacular valleys, breathtaking views, snowcapped mountains, and lush forests of oak, deodar, and pine, Manali is a magical hill station at the northern end of Kullu valley in Himachal Pradesh. Gifted to the world by the mighty Himalayas, Manali offers magnificent views of the Pir Panjal and the Dhauladhar ranges, covered in a thick blanket of snow for most of the year</p>
+    </div>
+
+    <div class="card"><center>
+      <h3>Follow For More</h3>
+      <input placeholder="Some text..." style="height: 55px; width: 80%;"></center>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <!-- <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg" style="height:100px;">Image</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div> -->
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg"><a href="udaipur.html"><img src="u1.jpg" style= "height: 100%;" width="100%;"></a></div><br>
+      <div class="fakeimg"><a href="kerala.html"><img src="k1.jpg" style= "height: 100%;" width="100%;"></a></div><br>
+      <div class="fakeimg"><a href="goa.html"><img src="g1.jpg" style= "height: 100%;" width="100%;"></a></div><br>
+      <div class="fakeimg"><a href="rishikesh.html"><img src="r1.jpg" style= "height: 100%;" width="100%;"></a></div>
+    </div>
+
+    <div class="card">
+      <h3>Popular Blog</h3>
+      <div class="container"><a href="culture.html"><img src="culture1.jpg" style= "height: 90%;" width="100%;"></a>
+        <div class="overlay">Cultures In India</div></a>
+      </div><br>
+      
+      <div class="container"><a href="it.html"><img src="it.jpg" style= "height: 100%;" width="100%;"></a>
+        <div class="overlay">IT Hubs Of India</div></a>
+      </div>  <br>  
+      
+      <div class="container"><a href="food.html"><img src="food.jpg" style= "height: 100%;" width="100%;"></a>
+        <div class="overlay">Authentic Foods Of India</div></a>
+      </div><br>
+      </div>
+
+  </div>
+</div>
+
+<div class="footer">
+  <h2>For More Contact Us By</h2><br>
+  <input placeholder="Any queries write us here..." >
+      <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved </p>
+</div>
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("demo");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+    </body>
+</html>
+<!-- <img src="k5.jpg" style="width:100%"> -->
