@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="blogpage.css">
+<title>Rishikesh</title>
+</head>
+<body>
+
+<div class="header">
+  <h2>EXPLORING  AROUND </h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h1 style="font-family:'Times New Roman', Times, serif;">Rishikesh</h1>
+      <h4> Dec 7, 2017</h4>
+      <div class="slideshow-container">
+
+        <div class="container">
+          <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img src="r1.jpg" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="r2.jpg" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="r3.jpg" style="width:100%">
+          </div>
+            
+          <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="r4.jpg" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="r5.jpg" style="width:100%">
+          </div>
+            
+          <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="r6.jpg" style="width:100%">
+          </div>
+            
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        </div>
+
+      <p>Rishikesh, is a city near Dehradun of the Indian state Uttarakhand.
+         It is situated on the right bank of the Ganges River and is a pilgrimage town for Hindus, with ancient sages and saints meditating here in search of higher knowledge.
+         There are numerous temples and ashrams built along the banks of the river.<br><br>
+         "Hṛṣīkeśa" (Sanskrit: हृषीकेश) is a name derived from Vishnu,
+         composed of hṛṣīka meaning 'senses' and īśa meaning 'lord' for a combined meaning as 'Lord of the Senses'.<br><br>
+         The Ganga Aarti (also known as Maha Aarthi) is performed at dusk at the Triveni Ghat. 
+         This popular Hindu religious ritual involves playing music and providing religious offerings to the fire.<br><br>
+         Rishikesh offers many rafting options along the Ganges from Grades I-IV. Rishikesh has India's highest bungee jumping at 83 m (272 ft) over a rocky cliff.
+          The longest flying fox (also known as a zipline) in Asia is in Rishikesh with a length of 1 km and speeds of 140 km per hour.<br>
+          The city's Sivananda Nagar houses the Sivananda Ashram and Divine Life Society, founded by Swami Sivananda. <br><br>The Ram Jhula and Lakshman Jhula suspension bridges are accompanied by temples with additional ashrams near Swargashram along the eastern riverbank.<br>
+          Neelkanth Mahadev Temple is located in the forest, 28 km from Rishikesh, while Vashishtha Guha, a cave used by the sage Vashishtha, is 21 km north of the area.</p>
+      </div>
+
+      <div class="card"><center>
+        <h3>Follow For More</h3>
+        <input placeholder="Some text.." style="height: 55px; width: 80%;" ></center>
+      </div>
+  </div>
+  <div class="rightcolumn">
+    <!-- <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg" style="height:100px;">Image</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div> -->
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg"><a href="goa.html"><img src="g1.jpg" style= "height: 100%;" width="100%;"></a></div><br>
+      <div class="fakeimg"><a href="kerala.html"><img src="k1.jpg" style= "height: 100%;" width="100%;"></a></div><br>
+      <div class="fakeimg"><a href="manali.html"><img src="m1.jpg" style= "height: 100%;" width="100%;"></a></div><br>
+      <div class="fakeimg"><a href="udaipur.html"><img src="u1.jpg" style= "height: 100%;" width="100%;"></a></div>
+    </div>
+
+    <div class="card">
+      <h3>Popular Blog</h3>
+      <div class="container"><a href="culture.html"><img src="culture1.jpg" style= "height: 90%;" width="100%;"></a>
+        <div class="overlay">Cultures In India</div></a>
+      </div><br>
+      
+      <div class="container"><a href="it.html"><img src="it.jpg" style= "height: 100%;" width="100%;"></a>
+        <div class="overlay">IT Hubs Of India</div></a>
+      </div>  <br>  
+      
+      <div class="container"><a href="food.html"><img src="food.jpg" style= "height: 100%;" width="100%;"></a>
+        <div class="overlay">Authentic Foods Of India</div></a>
+      </div><br>
+      </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>For More Contact Us By</h2><br>
+  <input placeholder="Any queries write us here..." >
+      <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved </p>
+</div>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("demo");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+    </body>
+</html>
+<!-- <img src="k5.jpg" style="width:100%"> -->

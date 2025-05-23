@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="blogpage.css">
+<title>Udaipur</title>
+</head>
+<body>
+
+<div class="header">
+  <h2>EXPLORING  AROUND </h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h1 style="font-family:'Times New Roman', Times, serif;">UDAIPUR</h1>
+      <h3> Dec 7, 2017</h3>
+      <div class="slideshow-container">
+
+        <div class="container">
+          <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img src="u1.jpg" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="u2.jpg" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="u3.jpg" style="width:100%">
+          </div>
+            
+          <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="u4.jpg" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="u5.jpg" style="width:100%">
+          </div>
+            
+          <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="u6.jpg" style="width:100%">
+          </div>
+            
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        </div>
+
+      <p>The city is located in the southernmost part of Rajasthan, near the Gujarat border. It is surrounded by the Aravali Range, which separates it from the Thar Desert.
+         It is placed almost in the middle of two major Indian metro cities, around 660 km from Delhi and 800 km from Mumbai.<br><br>
+         Udaipur is a city and municipal corporation in Udaipur district of the state of Rajasthan, India. It is also known as the 'City of Lakes' and serves as the administrative headquarters of Udaipur district.
+          It is the historic capital of the kingdom of Mewar in the former Rajputana Agency<br><br>
+          It was founded in 1559 by Udai Singh II of the Sisodia clan of Rajputs, when he shifted his capital from the city of Chittorgarh to Udaipur after Chittorgarh was besieged by Akbar.
+          It remained as the capital city till 1818 when it became a British princely state,and thereafter the Mewar province became a part of Rajasthan when India gained independence in 1947.<br><br>
+          There are footprints of two different civilizations, which provides claims about earliest inhabitants of the Ahar culture: the first ones are the Bhil/Bheels, the indigenous tribes originated at this place, and are still residing in the area in large numbers.
+          The second footprints were of Rajputs, who once entered the enclosed valley, and then continued to live in this place for centuries.<br><br>
+          The lakes of the city being interconnected form a lake system which supports and sustains the groundwater recharge, water availability for drinking, agriculture, industries and is a source of employment through tourism. </p>
+    </div>
+      
+    <div class="card"><center>
+      <h3>Follow For More</h3>
+      <input placeholder="Some text.." style="height: 55px; width: 80%;" ></center>
+    </div>
+
+  </div>
+  <div class="rightcolumn">
+    <!-- <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg" style="height:100px;">Image</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div> -->
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg"><a href="goa.html"><img src="g1.jpg" style= "height: 100%;" width="100%;"></a></div><br>
+      <div class="fakeimg"><a href="kerala.html"><img src="k1.jpg" style= "height: 100%;" width="100%;"></a></div><br>
+      <div class="fakeimg"><a href="manali.html"><img src="m1.jpg" style= "height: 100%;" width="100%;"></a></div><br>
+      <div class="fakeimg"><a href="rishikesh.html"><img src="r1.jpg" style= "height: 100%;" width="100%;"></a></div>
+    </div>
+
+    
+    <div class="card">
+      <h3>Popular Blog</h3>
+      <div class="container"><a href="culture.html"><img src="culture1.jpg" style= "height: 90%;" width="100%;"></a>
+        <div class="overlay">Cultures In India</div></a>
+      </div><br>
+      
+      <div class="container"><a href="it.html"><img src="it.jpg" style= "height: 100%;" width="100%;"></a>
+        <div class="overlay">IT Hubs Of India</div></a>
+      </div>  <br>  
+      
+      <div class="container"><a href="food.html"><img src="food.jpg" style= "height: 100%;" width="100%;"></a>
+        <div class="overlay">Authentic Foods Of India</div></a>
+      </div><br>
+      </div>
+
+  </div>
+</div>
+<div class="footer">
+  <h2>For More Contact Us By</h2><br>
+  <input placeholder="Any queries write us here..." >
+      <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved </p>
+</div>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("demo");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+    </body>
+</html>
+<!-- <img src="k5.jpg" style="width:100%"> -->
